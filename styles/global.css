@@ -1,0 +1,37 @@
+/* styles/global.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Mono', monospace;
+}
+
+body {
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.classified {
+    color: #8B0000;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    color: #808080;
+    font-size: 0.8em;
+    border-top: 1px solid #808080;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+}

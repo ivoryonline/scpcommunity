@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCP Community</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/application.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+    <img src="assets/scp-logo.png" alt="SCP Foundation Logo" class="logo">
+
+    <div class="header">
+        <h1><span class="classified">[CLASSIFIED]</span> Foundation Personnel Application</h1>
+        <p class="classified">CONFIDENTIAL - INTERNAL USE ONLY</p>
+    </div>
+
+    <div id="introSection">
+        <div class="introduction">
+            <p>Mankind in its present state has been around for a quarter of a million years, yet only the last 4,000 have been of any significance. So, what did we do for nearly 250,000 years? We huddled in caves and around small fires, fearful of the things that we didn't understand. It was more than explaining why the sun came up, it was the mystery of enormous birds with heads of men, and rocks that came to life. So we called them 'gods' and 'demons,' and begged them to spare us and prayed for salvation.
+            <br>
+Mankind must not go back to hiding in fear. No one else will protect us, we must stand up for ourselves.</p>
+            <br>
+            <p>While the rest of mankind dwell in the light, we must stand in the darkness to combat it, contain it, and shield it from the eyes of the public, so that others may live in a sane, normal world.</p>
+            <br>
+            <p>We secure. We contain. We protect.</p>
+        </div>
+
+        <div class="consent-section">
+            <input type="checkbox" id="interestConfirmation" name="interestConfirmation">
+            <label for="interestConfirmation">I'm interested in realistic SCP roleplay</label>
+        </div>
+
+        <button id="proceedBtn" class="proceed-btn" disabled>Proceed</button>
+    </div>
+
+    <form id="scpApplicationForm" class="form-section">
+        <div class="form-group">
+            <label for="realAge">Your Real Age:</label>
+            <div style="display: flex; align-items: center;">
+                <input type="number" id="realAge" name="realAge" min="16" max="120" required>
+                <div class="tooltip-container">
+                    <span class="tooltip-icon">🛈</span>
+                    <div class="tooltip">
+                        <strong>Why do we need this information?</strong>
+                        <p>We require your actual age to ensure participant safety and compliance with age-appropriate roleplay guidelines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="role">Character Role:</label>
+            <select id="role" name="role" required>
+                <option value="">Select Character Role</option>
+                <option value="class-d">Class-D Personnel</option>
+                <option value="cleaning-staff">Cleaning Staff</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="characterName">Character Name:</label>
+            <input type="text" id="characterName" name="characterName" required placeholder="Full Character Name" maxlength="100">
+        </div>
+
+        <div class="form-group">
+            <label for="characterGender">Character Gender:</label>
+            <input type="text" id="characterGender" name="characterGender" maxlength="50">
+        </div>
+
+        <div class="form-group">
+            <label for="characterAge">Character Age:</label>
+            <input type="number" id="characterAge" name="characterAge" min="18" max="120" required>
+        </div>
+
+        <div class="form-group">
+            <label for="physicalAppearance">Physical Appearance:</label>
+            <textarea id="physicalAppearance" name="physicalAppearance" rows="3" maxlength="250" required placeholder="Height, build, distinguishing features"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="background">Background/Origin:</label>
+            <textarea id="background" name="background" rows="4" maxlength="500" required placeholder="Brief narrative of your character's history (1-2 paragraphs)"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="personalityTraits">Personality Traits:</label>
+            <textarea id="personalityTraits" name="personalityTraits" rows="2" maxlength="200" required placeholder="Describe your character's demeanor"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="skillsAbilities">Skills & Abilities:</label>
+            <textarea id="skillsAbilities" name="skillsAbilities" rows="3" maxlength="300" required placeholder="Notable talents or experiences relevant to your character's role"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+
+    <div id="discordModal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 class="classified">Final Step</h2>
+            <p>Please provide your Discord username for contact.</p>
+            <p class="classified">[Ensure friend requests are turned on]</p>
+            <div class="form-group">
+                <input type="text" id="discordUsername" name="discordUsername" required placeholder="Discord Username" maxlength="100">
+            </div>
+            <button id="finalSubmitBtn" class="submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© [REDACTED] Foundation | Unauthorized Disclosure Prohibited | Internal Documentation Only</p>
+        <p>Tracking Code: [CLASSIFIED]</p>
+    </div>
+
+    <script src="js/application.js"></script>
+</body>
+</html>

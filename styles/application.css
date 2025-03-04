@@ -1,0 +1,139 @@
+/* styles/application.css */
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 400px;
+    width: 30%;
+    height: auto;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid #808080;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.introduction {
+    border: 1px solid #808080;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.consent-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.consent-section input {
+    margin-right: 10px;
+}
+
+.form-section {
+    display: none;
+    border: 1px solid #808080;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], 
+input[type="number"], 
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #808080;
+    background-color: #f9f9f9;
+}
+
+.proceed-btn, .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Tooltip Styles */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.tooltip-icon {
+    cursor: help;
+    color: #808080;
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    width: 250px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #808080;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .introduction, .form-section {
+        padding: 10px;
+    }
+}
