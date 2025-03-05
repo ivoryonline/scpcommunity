@@ -137,3 +137,19 @@ select {
         padding: 10px;
     }
 }
+
+.discord-confirmation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.discord-confirmation input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.discord-confirmation label {
+    display: flex;
+    align-items: center;
+}
